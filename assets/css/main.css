@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {}
+
+#header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+}
+#nav{
+    display: inline-block;
+}
+#nav,
+.subnav {
+    list-style-type: none;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 46px;
+    display: block;
+    text-transform: uppercase;
+}
+
+#nav .subnav li:hover a,
+#nav>li:hover>a {
+    color: #fff;
+    background-color: #ccc;
+}
+#nav .icon-down{
+    font-size: 10px;
+}
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav {
+    position: absolute;
+    background-color:#fff;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+#nav .subnav a {
+    color: #000;
+    line-height: 38px;
+    padding: 0 16px;
+}
+#header .search-btn{
+    float:right;
+}
+#header .search-icon{
+    color: #fff;
+    font-size: 15px;
+    display: block;
+    
+    padding:0 21px;
+    line-height: 46px;
+}
+#header .search-icon:hover{
+    background-color: red;
+    cursor: pointer;
+}
+#nav {}
+
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(https://www.w3schools.com/w3images/la.jpg) top center/ cover no-repeat;
+}
+#slider .text-content{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+#slider .text-content .text-heding{
+    font-weight: 500;
+    font-size: 24px;
+}
+#slider .text-content .text-dev{
+    font-size: 15px;
+    margin: 25px;
+}
+
+
+#content {
+    padding-top: 64px!important;
+    padding-bottom: 64px!important;
+}
+#content .content-selection{
+    width: 800px;
+    margin-left: auto;
+    margin-right:auto ;
+    
+}
+#content .selection-sub-heading{
+    text-align: center;
+    font-style: italic;
+    
+
+}
+#content .content-selection .selection-heading{
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+
+}
+ p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#footer {}
